@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300i,400,700,900');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;    
+}
+
+
+/* Nav */
+nav{
+    background-color: rgba(73, 102, 138, 0.9);
+    border-bottom: .1px solid rgba(105,121,141,.9);
+    position: fixed; 
+    z-index:1000;
+    font-size: 10px;
+    height: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+    height: 100%;
+}
+
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+float: right;
+margin-right: 5em;
+font-family: 'Lato', sans-serif;
+font-size: 6px;
+font-weight: 200;
+font-style: normal;
+}
+/* 
+nav ul li{
+display: inline-block;
+margin: 3em 1em 0em 0em;
+} */
+
+nav a{
+color: white;
+font-size: .8em;    
+text-decoration: none;  
+}
+
+/* Nav Media Query */
+/* Media Queries */
+@media(max-width: 79rem){
+    nav ul li a{
+        font-size: 13px;
+    }
+
+}
+@media(max-width: 75rem){
+    nav ul li a{
+        font-size: 11px;
+    }
+}
+@media(max-width: 72rem){
+    nav ul li a{
+        font-size: 9px;
+    }
+}
+@media(max-width: 70rem){
+    .carousel img{
+        height: 70vh;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+
+}
+@media(max-width: 68rem){
+    .carousel img{
+        height: 70vh;
+    }
+    nav ul li a{
+        font-size: 7px;
+    }
+
+}
+
+@media(max-width: 60rem){
+    .carousel img{
+        height: 60vh;
+    }
+}
+@media(max-width: 50rem){
+    .carousel img{
+        height: 50vh;
+    }
+}
+@media(max-width: 40rem){
+    .carousel img{
+        height: 40vh;
+    }
+    nav{
+        height: 75px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* .caption h3, h4, h5{
+        font-size: 10px
+    } */
+}
+
+/* 
+.container-1{
+    display: flex;
+} */
+
+
+#jm{
+    height: 450px;
+    width: 450px;
+}
+
+#dr{
+    height: 450px;
+    width: 450px;
+}
+
+#aj{
+    height: 450px;
+    width: 450px;
+}
+
+#profiles p{
+    margin-top: 60px;
+    /* width: 600px; */
+}
+#profiles h5{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 600px; */
+}
+
+/* Footer */
+.page-footer{
+    background-color: rgb(234,235,235);
+    color: black;
+    box-shadow: 0 -10px 10px -5px #333; 
+}
+
+.fa{
+    color: rgb(245,129,44);
+ }
+
+ .page-footer ul li{
+     /* text-decoration: underline; */
+     margin: 10px;
+ }
+
+.medium:hover{
+    color:rgb(245,129,44);
+    transition: .25s ease-in;
+}
+
