@@ -58,13 +58,20 @@
 <body>
 
 <header class="header effect6">
+    
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="about.html">About Us</a></li>
+        <li class="divider"></li>        
+        <li><a href="executive-team.html">Executive Team</a></li>
+    </ul>
+
     <nav>
             <div class="nav-wrapper">
               <a href="#!" class="brand-logo"></a>
-              <img src="YCG-logo.png" alt="">
+              <a href="index.html"><img src="YCG-logo.png" alt=""></a>  
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                    <li><a href="about.html" class="nav-fs">ABOUT</a></li>
+                    <li><a href="about.html" class="nav-fs dropdown-button" data-activates="dropdown1">ABOUT</a></li>
                     <li><a href="" class="nav-fs">SERVICES</a></li>
                     <li><a href="" class="nav-fs">INDUSTRIES</a></li>
                     <li><a href="" class="nav-fs">BLOG</a></li>
@@ -85,7 +92,8 @@
               </ul>
             </div>
           </nav>
-          
+
+
        <!-- Content Slider -->
     <div class="slider" >
         <ul class="slides" >
@@ -340,7 +348,24 @@ For over 40 years, York Consulting Group has provided sound, innovative solution
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+<!-- Nav-Dropdown -->
 
+<script type="text/javascript">
+
+
+
+$('.dropdown-button').dropdown({
+    inDuration: 300,
+    width: 300,
+    outDuration: 225,
+    constrainWidth: false, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 0, // Spacing from edge
+    belowOrigin: true, // Displays dropdown below the button
+    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+  }
+);
+</script>
 
 <!-- Sandwich Collapse -->
 <script type="text/javascript">
